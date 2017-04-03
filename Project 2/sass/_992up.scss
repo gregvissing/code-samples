@@ -1,0 +1,371 @@
+/******************************************************************
+  
+Stylesheet: Desktop Stylesheet
+Author: 2060 Digital
+
+This stylesheet will affect desktop-size screens.
+
+******************************************************************/
+
+/* 
+Keep in mind that most customizations can and should be done in
+the Wordpress theme customizer. This file only exists for anything 
+that can't be accomplished with the theme customizer/page builder.
+*/
+
+/* Layout */
+.fl-row-content-wrap {
+	.fl-row-content {
+		.fl-col-group {
+			.fl-col:first-of-type {
+				.fl-col-content {
+					.fl-module-rich-text, .fl-module-contact-form, .fl-module-gallery, .fl-module-contact-form, .fl-module-accordion, .fl-module-widget {
+						padding: 0 50px;
+					}
+				}
+			}
+			.fl-col-small {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+/* Main navigation */
+.fl-page-nav-col {
+	padding-left: 0;
+	.fl-page-nav-collapse {
+		#menu-main-navigation-1 {
+			.menu-item { 
+				a {
+					padding-bottom: 0;
+					padding-top: 0;
+					padding-left: 14px !important;
+					padding-right: 14px !important;
+				}
+				.sub-menu {
+					background-color: #BCBCBF;
+					border-top: 3px solid #70cce3;
+					opacity: 0.9;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					.menu-item {
+						a {
+							color: #fff;
+							text-align: left;
+							padding-top: 5px;
+							padding-bottom: 5px;
+							margin: 0;
+						}
+					}
+					.menu-item:first-of-type {
+						display: inline-block;
+					}
+				}
+			}
+		}
+		> #menu-main-navigation-1 {
+			> .menu-item {
+				border-right: 1px solid #666673;
+				&:last-of-type {
+					border-right: none;
+				}
+			}
+		}
+	}
+}
+
+#menu-main-navigation-1 {
+	.home {
+		display: inline-block !important;
+	}
+}
+
+.fl-page-fixed-nav-wrap .fl-page-nav-wrap {
+	.fl-page-nav #menu-main-navigation {
+		> li {
+			> a {
+				padding: 10px 11px !important;
+			}
+			&:first-of-type {
+				//display: none;
+			}
+		}
+	}
+}
+
+/* Top bar */
+#top-bar-cols, #twentysixty-before-top-bar {
+	background-color: #70cce3;
+	height: 30px;
+	.col-md-4 {
+		color: #fff;
+		line-height: 20px;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		.fa-phone, a {
+			color: #fff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.dashicons-calendar-alt {
+			margin-top: 0px;
+		}
+	}
+	.request-header {
+		text-align: center;
+		border-left: 1px solid #fff;
+	}
+}
+
+#top-bar-cols {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/* Bottom Bar Cols */
+#bottom-bar-cols {	
+	max-width: 1100px;
+	margin: 0 auto;
+	.col-md-4 { 
+		color: #BCBCBF;
+		text-align: center;	
+		padding: 10px;
+		span {
+			display: block;
+			font-size: 25px;
+			.fa-phone {
+				color: #fff;
+			}
+		}
+		.footer-logo {
+			width: 100%;
+			padding: 0 !important; // new
+		}
+		.our-partners {
+			color: #fff;
+			font-size: 25px;
+		}
+		.phone-number-footer {
+			font-weight: bold;
+		}
+		.address-footer {
+			font-size: 16px;
+		}
+		.call-us-footer {
+			color: #fff;
+		}
+		#partners-footer {
+			list-style-type: none;
+			padding-left: 0;
+			width: 100%;
+			margin: 0;
+			display: inline-block;
+			li {
+				float: left;
+				display: inline-block;
+				&.hospice-sw-found {
+					padding: 0;
+					width: 30%;
+				}
+				&.hospice-sw {
+					width: 39%;
+					padding: 0 5px;
+				}
+				&.voice-your-choice {
+					padding: 0;
+					width: 31%;
+				}				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.middle-footer {
+		border-left: 1px solid #55555e;
+		border-right: 1px solid #55555e;
+	}
+}
+
+#twentysixty-after-footer {
+	background-color: #666673;
+	padding: 22px 0 0 0;
+	border-top: 3px solid #70cce3;
+	.hipaa {
+		background-color: #e4e4e5; 
+		padding: 5px 0;
+		a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+}
+
+.fl-page-footer {
+	display: none;
+}
+
+/* Sidebar */
+a.fl-button {
+	font-size: 23px !important;
+}
+
+.fl-icon-group-center .fl-icon {
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+
+#voiceChoice .fl-button-text {
+	color: #70cce3;
+	display: none;
+}
+
+.fl-button-text {
+	font-size: 24px !important;
+}
+
+#voiceChoice .fl-module-content .fl-button-wrap .fl-button {
+	background-image: url('http://carebridge.wpengine.com/wp-content/uploads/2016/04/voice-your-choice.png') !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 80;
+	background-size: contain;
+	position: relative;
+}
+
+#voiceChoice .fl-module-content .fl-button-wrap a {
+	height: 63px;
+}
+
+.fl-module-content .fl-button-wrap .fl-button {
+	text-align: center;}
+
+#roundedTab {
+	background-color: #666673;
+	margin: 40px 20px 0; // new
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#roundedTab .fl-module-content .fl-rich-text p {
+	color: #fff;
+	margin: 0;
+	line-height: 35px;
+}
+
+.fl-module-photo, .fl-module-button, .fl-module-separator {
+	.fl-module-content {
+		margin-left: 20px; // new
+		margin-right: 20px; // new
+	}	
+}
+
+.fl-module-icon-group {
+	.fl-module-content {
+		margin: 0 10px 10px;
+	}
+}
+
+.sidebar-video {
+	> .fl-module-content {
+		margin: 20px 20px 0 20px; 
+		.mejs-overlay.mejs-layer.mejs-overlay-play {
+			background-color: rgba(0, 0, 0, 1) !important;	
+		}
+	}	
+}
+
+/* Patient Stories */
+.image-name-container {
+	display: inline-block;
+	float: left;
+	width: 250px;
+	img {
+		border: 5px solid #e4e4e5;
+	}
+	h1 {
+		text-align: center;
+		font-family: Montserrat;
+	}
+}
+.patient-story-content {
+	display: inline-block;
+	float: none;
+	width: 60%;
+	.fl-row-content-wrap {
+		padding-top: 0;
+		.fl-module-content {
+			margin-top: 0;
+			h2 {
+				margin-top: 0;
+				font-family: 'Montserrat Light', arial;
+			}
+		}
+	}
+}
+
+/* FAQs */
+.faq {
+	.fl-accordion-button {
+		background-color: #70cce3;
+		width: 100%;
+		.fl-accordion-button-label {
+			float: right;
+			display: inline-block;
+			width: 95%;
+		}
+		.fl-accordion-button-icon.fa.fa-plus, .fl-accordion-button-icon.fa.fa-minus {
+			padding-left: 0;
+			float: left;
+			display: inline-block
+		}
+		.fl-accordion-button-label, .fl-accordion-button-icon.fa.fa-plus:before, .fl-accordion-button-icon.fa.fa-minus:before {
+			color: #fff;
+		}
+	}
+	.fl-accordion-content {
+		padding-top: 10px;
+		ol, ul {
+			padding-left: 20px;
+		}
+	}
+}
+
+/* Careers */
+.fl-module.careers {
+	padding: 10px 50px;
+}
+
+.modal.careers {
+	.modal-dialog {
+		width: 800px !important;
+		.modal-content {
+			.modal-header {
+				font-weight: bold;
+				#myModalLabel, > .modal-location {
+					display: inline-block;
+				}
+				p {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+/* Events page */
+#outer-events-container {
+	padding: 0 50px;
+	.event-container {
+		.date-container {
+			width: 10% !important;
+		}
+		.social-icons {
+			width: 15% !important;
+		}
+	}	
+}

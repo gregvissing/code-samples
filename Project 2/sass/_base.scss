@@ -1,0 +1,1008 @@
+/******************************************************************
+  
+Stylesheet: Base Stylesheet
+Author: 2060 Digital
+
+This stylesheet will affect screens of all sizes.
+
+******************************************************************/
+
+/* 
+Keep in mind that most customizations can and should be done in
+the Wordpress theme customizer. This file only exists for anything 
+that can't be accomplished with the theme customizer/page builder.
+*/ 
+
+@import url(//allfont.net/allfont.css?fonts=montserrat-light);
+
+body {
+	font-family: 'Montserrat Light', arial;
+}
+
+ol, ul {
+	padding-left: 20px;
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+a {
+	transition: all 0.4s ease;
+}
+
+/* * * * * * * * * */
+/* Headings */
+/* * * * * * * * * */
+h1, h2 {
+	font-family: "Brush Script MT", cursive;
+	margin-top: 10px;
+	color: #70cce3;
+}
+
+/* * * * * * * * * */
+/* Layout */
+/* * * * * * * * * */
+.fl-page-header-row {
+	.col-md-4 {
+		width: 25%;	
+		padding-left: 0;
+	}
+	.col-md-8 {
+		width: 75%;
+		padding-right: 0;
+	}
+}
+
+.fl-page-nav-right .fl-page-header-row {
+	width: 100%;
+}
+
+.fl-row-content-wrap {
+	.fl-row-content {
+		.fl-col-group {
+			.fl-col:first-of-type {
+				.fl-col-content {
+					.fl-module-rich-text, .fl-module-contact-form, .fl-module-gallery, .fl-module-contact-form, .fl-module-accordion, .fl-module-widget {
+						padding: 10px;
+					}
+				}
+			}
+			.fl-col-small {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+/* * * * * * * * * */
+/* Top bar */
+/* * * * * * * * * */
+#top-bar-cols, #twentysixty-before-top-bar {
+	background-color: #70cce3;
+	.col-md-4 {
+		color: #fff;
+		line-height: 30px;
+		text-align: center;
+		.fa-phone, a {
+			color: #fff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		a.call {
+			display: inline;
+		}
+		.desktop-call, .fa-phone.desktop {
+			display: none;
+		}
+		.dashicons-calendar-alt {
+			margin-top: 5px;
+		}
+	}
+	.request-header {
+		text-align: center;
+		a {
+			transition: all 0.4s ease;
+			&:hover {
+				color: #666667;
+			}
+		}
+	}
+	.honor-vets {	
+		font-weight: bold;
+		line-height: 30px;
+		text-align: center;
+		margin: 0 !important;
+		.honor-vets-img, span {
+			height: 30px;
+			color: #666673;
+			display: inline-block;
+			background-color: #fff;
+			vertical-align: top;
+		}
+		.honor-vets-img {
+			margin-left: -5px;
+		}
+		span {
+			line-height: 30px;
+			height: 30px;
+			padding: 0 5px;
+		}
+		.honor-vets-flag-img {
+			margin-right: -5px;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+/* * * * * * * * * */
+/* Bottom Bar Cols */
+/* * * * * * * * * */
+#bottom-bar-cols {	
+	.col-md-4 {
+		color: #BCBCBF;
+		text-align: center;	
+		padding: 10px;
+		span {
+			display: block;
+			font-size: 25px;
+			.fa-phone {
+				color: #fff;
+			}
+		}
+		.footer-logo {
+			width: 50%; 
+		}
+		.our-partners {
+			color: #fff;
+			font-size: 25px;
+		}
+		.phone-number-footer {
+			font-weight: bold;
+		}
+		.address-footer {
+			font-size: 16px;
+			a {
+				color: #BCBCBF;
+				&:hover {
+					color: #70cce3;
+				}
+			}
+		}
+		.call-us-footer {
+			color: #fff;
+		}
+		#partners-footer {
+			list-style-type: none;
+			padding-left: 0;
+			width: 100%;
+			margin: 0;
+			display: inline-block;
+			li {
+				float: left;
+				display: inline-block;
+				width: 33%;
+				padding: 0 5px;
+				margin-bottom: 0 !important;
+				&.hospice-sw-found {
+					padding: 0 20px;
+				}
+				&.hospice-sw {
+					padding: 0;
+				}
+				&.voice-your-choice {
+					padding: 0 20px;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.middle-footer {
+		border-left: 1px solid #55555e;
+		border-right: 1px solid #55555e;
+	}
+}
+
+#twentysixty-after-footer {
+	background-color: #666673;
+	padding: 22px 0 0 0;
+	border-top: 3px solid #70cce3;
+	.hipaa {
+		background-color: #e4e4e5; 
+		padding: 5px 0;
+		a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+}
+
+.fl-page-footer {
+	display: none;
+}
+
+/* * * * * * * * * */
+/* Sidebar */
+/* * * * * * * * * */
+.fl-button-text {
+	font-size: 24px;
+    line-height: 26px;
+}
+
+.fl-builder-content .fl-button i {
+	font-size: 1.1em;	
+}
+
+#voiceChoice .fl-button-text {
+	color: #70cce3;
+	display: none;
+}
+ 
+#voiceChoice .fl-module-content .fl-button-wrap .fl-button {
+	background-image: url('http://carebridge.wpengine.com/wp-content/uploads/2016/04/voice-your-choice.png') !important;
+	background-position: center;
+	background-repeat: no-repeat; 
+	z-index: 80;
+	background-size: contain;
+	position: relative;
+}
+
+#voiceChoice .fl-module-content .fl-button-wrap a {
+	height: 63px !important;
+}
+
+.fl-module-content .fl-button-wrap .fl-button {
+	text-align: center;
+}
+
+#roundedTab {
+	background-color: #666673;
+	margin: 40px 10px 0;
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#roundedTab .fl-module-content .fl-rich-text p {
+	color: #fff;
+	margin: 0;
+	line-height: 35px;
+}
+
+.fl-module-photo, .fl-module-button, .fl-module-separator {
+	.fl-module-content {
+		margin-left: 10px;
+		margin-right: 10px;
+	}	
+}
+
+.fl-module-icon-group {
+	.fl-module-content {
+		margin: 0 10px 10px;
+	}
+}
+
+.sidebar-video {
+	> .fl-module-content {
+		margin: 20px 20px 0 20px; 
+		.mejs-overlay.mejs-layer.mejs-overlay-play {
+			background-image: url('http://carebridgeservices.org/wp-content/uploads/2016/06/captian-scene-bg.png') !important;	
+			background-size: contain;
+		}
+	}	
+}
+
+/* * * * * * * * * */
+/* Hero section */
+/* * * * * * * * * */
+#home-content-photo, #about-content-photo {
+	.fl-module-content {
+		margin: 0 !important;
+	}
+}
+
+#banner-image {
+	.fl-module-content {
+		margin: 0 !important;
+	}
+}
+
+#banner-separator {
+	.fl-module-content {
+		margin: 0 !important;
+	}
+}
+
+/* * * * * * * * * */
+/* Main navigation */
+/* * * * * * * * * */
+#menu-main-navigation-1 .menu-item .sub-menu {
+	background-color: #BCBCBF;
+	border-top: 3px solid #70cce3;
+	opacity: 0.9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.fl-page-nav-collapse > #menu-main-navigation-1 > .menu-item {
+	border-right: 1px solid #666673;
+}
+#menu-main-navigation-1 .menu-item:last-of-type {
+	border-right: none;
+}
+
+#menu-main-navigation-1 .menu-item .sub-menu .menu-item a {
+	color: #fff;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+
+#menu-main-navigation-1 .menu-item a {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/* * * * * * * * * */
+/* Mobile Nav */
+/* * * * * * * * * */
+.fl-page-header.mobile {
+	.fl-page-header-container {
+		padding: 10px;
+		.fl-page-header-row {
+			margin: 0;
+			.col-md-4 {
+				padding-left: 0;
+				padding-right: 0;
+				.fl-page-header-logo {
+					margin-right: 0;
+					margin-left: 10px;
+					width: 130px;
+					padding-bottom: 0;
+					a {
+						display: block;
+					}
+				}				
+			}
+			.fl-page-nav-col.col-md-8 {
+				width: 95%;
+				.fl-page-nav-wrap .fl-page-nav .navbar-toggle {
+					top: 25px !important;
+					right: 10px;
+				}
+				.fl-page-nav-collapse {
+					top: 105px;
+					left: 10px;
+					right: 10px;
+					position: absolute;
+					background-color: #fff;
+					z-index: 1000;
+					border: 1px solid #666673;
+					padding-bottom: 0;
+					#menu-main-navigation-1 {
+						.menu-item {
+							border: none;
+							a {
+								margin: 5px 0;
+								text-align: left;
+							}
+							.sub-menu {
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* * * * * * * * * */
+/* FAQs */
+/* * * * * * * * * */
+.faq {
+	margin: 0;
+	.fl-accordion-button {
+		background-color: #70cce3;
+		width: 100%;
+		.fl-accordion-button-label {
+			float: right;
+			display: inline-block;
+			width: 90%;
+		}
+		.fl-accordion-button-icon.fa.fa-plus, .fl-accordion-button-icon.fa.fa-minus {
+			padding-left: 0;
+			float: left;
+			display: inline-block
+		}
+		.fl-accordion-button-label, .fl-accordion-button-icon.fa.fa-plus:before, .fl-accordion-button-icon.fa.fa-minus:before {
+			color: #fff;
+		}
+	}
+	.fl-accordion-content {
+		padding-top: 10px;
+		ol, ul {
+			padding-left: 20px;
+		}
+	}
+}
+
+/* * * * * * * * * */
+/* Take the Quiz */
+/* * * * * * * * * */
+.yes-no-option {
+	input[type="radio"] {
+		margin-left: 10px;
+	}
+	> br {
+		display: none;
+	}
+}
+
+/* * * * * * * * * */
+/* Request an Appt */
+/* * * * * * * * * */
+.cb-appt-request #field_1_2 .datepicker {
+	width: 7.5em !important;	
+}
+
+/* * * * * * * * * */
+/* Patient Stories */
+/* * * * * * * * * */
+.patient-story {
+	width: 100%;
+	display: inline-block;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	img {
+		display: block;
+		margin: 0 auto;
+		border: 5px solid #e4e4e5;
+	}
+	span {
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
+	a {
+		display: block;
+		text-align: center;
+	}
+}
+
+.single-post {
+	.event-time, .share-event, .event-date {
+		display: none;
+	}
+}
+
+.fl-post-header {
+	.image-name-container {
+		display: block;
+		float: none;
+		width: 250px;
+		margin: 0 auto;
+		img {
+			border: 5px solid #e4e4e5;
+			width: 100%;
+			height: auto;
+		}
+		h1 {
+			text-align: center;
+			font-family: Montserrat;
+		}
+	}
+	.patient-story-content {
+		display: inline-block;
+		float: right;
+		width: 100%;
+		padding: 0 5px;
+		.fl-row-content-wrap {
+			padding-top: 0;
+			.fl-module-content {
+				margin-top: 0;
+				h2 {
+					margin-top: 0;
+					font-family: 'Montserrat Light', arial;
+				}
+			}
+		}
+	}
+	.read-more-stories {
+		display: block;
+		text-align: center;	
+		margin-bottom: 20px;
+	}
+}
+
+/* * * * * * * * * */
+/* Events page */
+/* * * * * * * * * */
+
+#news-events {
+	overflow-x: visible;
+	overflow-y: visible;
+	position: relative;
+	width: 100%;
+	display: block;
+	#outer-events-container {
+	    overflow: visible;
+	    .event-container, .single-event-container {
+			margin-top: 10px;
+			display: block;
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			&:first-of-type {
+				margin-top: 0;
+			}
+			hr {
+				margin: 10px 0;
+			}
+			.date-container {
+				width: 15%;
+				text-align: center;
+				font-weight: bold;
+				display: inline-block;
+				float: left;
+				.event-month {
+					font-size: 20px !important;
+					line-height: 21px !important;
+				}
+				.event-day {
+					font-size: 40px !important;
+					line-height: 45px !important;
+				}
+			}
+			.event-title {
+				width: 85%;
+				display: inline-block;
+				font-size: 20px;
+				font-weight: bold;
+				float: left;
+				padding-right: 20px;
+				height: 80px;
+				min-height: 80px;
+			}
+			.social-icons {
+				float: left;
+				display: block;
+				width: 100%;
+				text-align: center;
+				p {
+					text-align: center;
+				}
+				.fl-icon {
+					display: inline-block;
+					vertical-align: bottom;
+				}
+				.fb-share-button {
+					margin-bottom: 5px;
+					display: inline-block;
+				}
+				.email {
+					height: 25px;
+					display: inline-block;
+					margin: 0 auto;
+					
+				}
+			}
+			.event-excerpt {
+				width: 85%;
+				float: right;
+				padding-right: 20px;
+			}
+			.event-content {
+				display: none;
+			}
+			.btn.btn-primary {
+				margin-left: 15%;
+				background-color: #70cce3;
+				border-color: #70cce3;
+			}
+		}
+		.single-event-container {
+		    display: none; 
+		    margin-top: 0;
+		    width: 100%;
+		    transition: all 0.5 ease-in;
+		    #event-content {
+			    padding: 5px 10px;
+		    }
+		    > .social-icons {
+			    float: none;
+			    width: 300px;
+			    display: block;
+			    margin: 5px auto;
+			    text-align: center;
+			    > .fl-icon {
+				    display: block;
+				    vertical-align: bottom;
+				    height: 22px;
+				    margin: 10px auto;
+			    }
+			    .email {
+				    height: 25px;
+			    }
+			}
+		    .viewAll {
+			    font-family: 'Montserrat Light', arial;
+			    text-align: center;
+			    cursor: pointer;
+		    }
+	    }
+	}	
+}
+
+.single-events {
+	#twentysixty-before-top-bar {
+		.col-md-4 {
+			background-color: #70cce3;
+			margin: 0;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			&.honor-vets {
+				padding: 0 15px;
+			} 
+		}
+	}
+	#twentysixty-after-footer {
+		.fl-row-fixed-width {
+		    max-width: 1100px;
+		    margin: 0 auto;
+		}
+	}
+}
+.events.type-events {
+	.image-name-container, .patient-story-content {
+		float: none;
+		display: block;
+		width: 80%;
+		clear: both;
+		margin: 0 auto;
+		.event-date {
+			float: left;
+			display: inline-block;
+			.month {
+				font-size: 24px;
+				line-height: 25px;
+				text-align: center;
+				margin: 0;
+			}
+			.day {
+				font-size: 60px;
+				line-height: 65px;
+			}
+		}
+		.event-time {
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+	.share-event {
+		text-align: center;
+		display: block;
+		#twitter-widget-0 {
+			vertical-align: middle;
+		}
+		.email {
+			height: 25px !important;
+		}
+	}
+	.read-more-stories {
+		display: none;
+	}
+}
+
+/* * ** ** ** ** ** ** ** ** ** * */
+/* Careers page */
+/* * ** ** ** ** ** ** ** ** ** * */
+.careers .fl-module-content {
+	position: relative;
+	input {
+		margin: 5px;
+	}
+	.primary-navigation-m {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		overflow: hidden;
+		position: relative;
+		z-index: 500;
+		width: 100%;
+		#jobs-filter{
+			list-style-type: none;
+			display: block;
+			float: left;
+			z-index: 10;
+			text-align: center;
+			width: 100%;
+			cursor: pointer;
+			> li {
+				padding: 0;
+				position: relative;
+				margin-bottom: 0;
+				#mobile-press {
+					padding: 5px;
+					display: block;
+				}
+				.chevron {
+					width: 20px;
+					position: absolute;
+					right: 10px;
+					margin: auto 0;
+					top: 0;
+					bottom: 0;
+					-webkit-transition-duration: 0.7s;
+					-moz-transition-duration: 0.7s;
+					-o-transition-duration: 0.7s;
+					transition-duration: 0.7s;
+					-webkit-transition-property: -webkit-transform;
+					-moz-transition-property: -moz-transform;
+					-o-transition-property: -o-transform;
+					transition-property: transform;
+				}
+			}
+			.inner-primary-navigation-m {
+				display: none;
+				list-style-type: none;
+				text-align: left;
+				padding: 0;
+				position: relative !important;
+				overflow: hidden;
+				background-color: white;
+				border-top: 1px solid black !important;
+				> li {
+					padding: 5px;
+					display: block;
+					border-bottom: 1px solid #d3d3d3;
+					margin-bottom: 0;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+				.SelectAllClose {
+					line-height: 34px;
+					input {
+						float: left;
+						cursor: pointer;
+					}
+					input {
+						margin: 10px 5px;
+					}
+					.btn {
+						float: right;
+					}
+					#label {
+						cursor: pointer;
+						margin-bottom: 0;
+					}
+				}
+			} 
+		}
+		.filter-text {
+			padding: 5px 10px 5px 5px;
+		}
+		#jobs-filter {
+			border: 1px solid black;
+			padding: 0;
+		}
+	}
+	.primary-navigation-m-loc {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		overflow: hidden;
+		position: relative;
+		z-index: 500;
+		width: 100%;
+		#locations-filter {
+			list-style-type: none;
+			display: block;
+			float: right;
+			z-index: 10;
+			text-align: center;
+			width: 100%;
+			cursor: pointer;
+			> li {
+				padding: 0;
+				position: relative;
+				margin-bottom: 0;
+				#mobile-press-loc {
+					padding: 5px;
+					display: block;
+				}
+				.chevron-loc {
+					width: 20px;
+					position: absolute;
+					right: 10px;
+					margin: auto 0;
+					top: 0;
+					bottom: 0;
+					-webkit-transition-duration: 0.7s;
+					-moz-transition-duration: 0.7s;
+					-o-transition-duration: 0.7s;
+					transition-duration: 0.7s;
+					-webkit-transition-property: -webkit-transform;
+					-moz-transition-property: -moz-transform;
+					-o-transition-property: -o-transform;
+					transition-property: transform;
+				}
+			}
+			
+			.inner-primary-navigation-m-loc {
+				display: none;
+				list-style-type: none;
+				text-align: left;
+				padding: 0;
+				position: relative !important;
+				overflow: hidden;
+				background-color: white;
+				border-top: 1px solid black !important;
+				> li {
+					padding: 5px;
+					display: block;
+					border-bottom: 1px solid #d3d3d3;
+					margin-bottom: 0;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+				.SelectAllClose {
+					line-height: 34px;
+					input {
+						float: left;
+						cursor: pointer;
+					}
+					input {
+						margin: 10px 5px;
+					}
+					.btn {
+						float: right;
+					}
+					#label {
+						cursor: pointer;
+						margin-bottom: 0;
+					}
+				}
+			} 
+		}
+		.filter-text {
+			padding: 5px 10px 5px 5px;
+		}
+		#locations-filter {
+			border: 1px solid black;
+			padding: 0;
+		}
+	}
+}
+.fl-module.careers {
+	padding: 10px;
+	.reset-filter {
+		margin-top: 0px;
+		color: #70CCE3;
+		display: inline-block;
+		cursor: pointer;
+	}
+	#outer-jobs-container {
+		display: block;
+		position: relative;
+		z-index: 2;
+		#job-top-container {
+			background-color: #d3d3d3;
+			> .job-title-top {
+				width: 100%;
+				display: block;
+				font-weight: bold;
+				padding: 5px;
+			}
+			> .job-location-top {
+				width: 60%;
+				text-align: left;
+			}
+			> .job-post-date-top {
+				width: 40%;
+				float: right;
+				text-align: right;
+			}
+			> .job-location-top, > .job-post-date-top {
+				display: inline-block;
+				font-weight: bold;
+				padding: 5px;		
+			}
+		}
+		#accordion {
+			border-left: 1px solid #d3d3d3;
+			border-right: 1px solid #d3d3d3;
+			border-bottom: 1px solid #d3d3d3; 
+			.accordion-toggle {			
+				cursor: pointer;
+				border-top: 1px solid #d3d3d3;
+				&:hover {
+					background-color: #70cce3;
+					color: #fff;
+					text-decoration: none;
+				}
+				.job-title {
+					width: 100%;
+					display: inline-block;
+					padding: 5px;
+					color: #666667;
+				}
+				.job-location {
+					width: 60%;
+					text-align: left;
+				}
+				.job-post-date {
+					width: 40%;
+					text-align: right;
+					float: right;
+				}
+				.job-location, .job-post-date {
+					display: inline-block;
+					padding: 5px;
+					color: #666667;
+				}		
+			}
+			.accordion-content {
+				display: none;
+				padding: 5px;
+				border-bottom: 1px solid #d3d3d3; 
+				h2 {
+					font-family: 'Montserrat';
+				}
+				.apply-for-job {
+					display: block;
+					margin: 0 auto;
+				}	
+				hr {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}			
+				.btn-success {
+					background-color: #70CCE3 !important;
+					width: 50%;
+					margin: 0 auto;
+					border-color: #2d6ca2 !important;
+					padding: 5px 16px;
+					&:hover {
+						font-weight: bold;
+					}
+					&:focus, &:active, &:visited {
+						border-color: #2d6ca2 !important;
+					}
+				}
+				> #top-apply.btn.btn-success.btn-lg.btn-block {
+					width: 247px !important;
+					float: right;
+				}
+			}
+			.accordion-content.default {
+				display: block;
+			}
+		}
+	}
+}
+
+#field_2_6 {
+	display: none;
+}
+
+.fl-module-content {
+	.fl-rich-text > p > strong {
+		span {
+			text-decoration: none;
+			border-bottom: 5px solid #ccc;
+		}
+	}
+}
+
+.hipaa {
+	text-align: center;
+}

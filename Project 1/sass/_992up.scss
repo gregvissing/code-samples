@@ -1,0 +1,329 @@
+/******************************************************************
+  
+Stylesheet: Desktop Stylesheet
+Author: 2060 Digital
+
+This stylesheet will affect desktop-size screens.
+
+******************************************************************/
+
+/* 
+Keep in mind that most customizations can and should be done in
+the Wordpress theme customizer. This file only exists for anything 
+that can't be accomplished with the theme customizer/page builder.
+*/
+
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+.fl-page-header.fl-page-header-primary.fl-page-nav-right.fl-page-nav-toggle-icon {
+	.fl-page-header-container.container {
+		padding-top: 0;
+		padding-bottom: 0;
+		.col-md-4 {
+			width: 150px;
+		}
+	}
+}
+
+#twentysixty-after-header {
+	.fl-page-header.fl-page-header-primary.fl-page-nav-right.fl-page-nav-toggle-icon {
+		.fl-page-header-wrap {
+			.fl-page-header-container {
+				.fl-page-header-row.row {
+					.col-md-4.col-sm-12 {
+						//width: 30%;
+						.fl-page-header-logo {
+							height: 100% !important;
+							margin: 0;	
+						}
+					}
+					.fl-page-nav-col.col-md-8.col-sm-12 {
+						vertical-align: bottom;
+						padding: 0 15px;
+						.fl-page-nav-collapse.collapse.navbar-collapse {
+							position: relative !important;
+							display: block;
+							margin-right: 0;
+							width: 655px;
+							.nav.navbar-nav {
+								margin-right: 0 !important;
+								.menu-item {
+									margin: 10px 0 0 40px;
+									a {
+										padding: 0 0 23px 0;
+									}
+									.sub-menu {
+										> .menu-item {
+											margin-top: 0;
+											> a {
+												padding: 10px 0;
+											}
+										}
+									}
+								}
+							}
+						}
+						.fl-page-nav-wrap {
+							border: none;
+							.connect-with-us {
+								text-align: center;
+								display: block;
+								float: right;
+								span {
+									float: none !important;
+									&:first-of-type {
+										margin-left: 0;
+									}
+									&:last-of-type {
+										float: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* *********************************** */
+/* INFO */
+/* *********************************** */
+.nav-tabs > li > a {
+    padding: 10px 15px;
+}
+
+/* *********************************** */
+/* UPCOMING SHOWS carousel section */
+/* *********************************** */
+#upcoming-shows {
+	.container {
+		padding: 0;
+	}	
+}
+
+/* *********************************** */
+/* SHOWS! */
+/* *********************************** */
+#outer-shows-container {
+	width: 100%;
+	height: 100%;
+	min-height: 504px;
+	display: block;
+	margin-top: 20px;
+	.show-card-container {
+		width: 48%;
+		margin: 0 1% 20px 1%;
+		.show-info {
+			color: #1a202c;
+			display: block;
+			width: 100%;
+			height: 200px; 
+			.show-image {
+			}
+			.show-title {
+				padding: 35px 10px 0px 30px;
+				.show-button-container {
+					left: 30px;
+					.btn.btn-lg {
+						width: 200px;	
+					}
+				} 
+			} 
+		}
+	}
+	.individual-show-container {
+		display: none;
+		margin: auto;
+	    position: fixed;
+	    z-index: 1000;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    padding: 0;
+	    background-size: cover;
+	    width: 900px;
+	    min-height: 650px;
+	    border: 1px solid #fff;
+	    button.close-show {
+		    position: absolute;
+		    right: 8px;
+		    top: 8px;
+		    border: 1px solid #000;
+		    border-radius: 20px !important;
+		    &:hover {
+			    background-color: #157f84;
+		    }
+		    span {
+			    font-size: 18px !important;
+		    }
+	    }
+	    h1.show-title {
+		    margin: 0;
+		    padding: 10px 50px;
+		    color: #fff;
+		    text-align: center;
+		    background-color: #1a202c;
+		    text-transform: uppercase;
+		    font-size: 36px;
+		}
+	    #show-details {
+		    position: relative;
+		    display: block;
+		    background-color: rgba(255, 255, 255, 0.75);
+		    h3, h4 {
+			    margin: 10px 0;    
+	
+			    font-weight: bold;
+		    }
+	    }
+	}
+}
+
+/* *********************************** */
+/* EAT AT LUDLOW GARAGE */
+/* *********************************** */ 
+#eat-at-the-ludlow-garage {
+	background-color: #c4c5c8 !important;
+	color: #1a202c;
+	text-align: center;
+	#eat-at-lg-logo {
+		height: 210px;
+		padding: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important; 
+		position: relative;
+		.fl-photo-align-left {
+			text-align: center;
+			.fl-photo-img {
+				height: 210px !important;
+			}
+		}
+	}
+	#call-for-reservation {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 210px;
+		position: relative;
+		display: block;
+		float: left !important;
+		margin: 20px auto 20px auto;
+		.fl-module-content.fl-node-content {
+			position: absolute !important;
+		    top: 0 !important;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+			.call-reservation {
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+			.phone {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.view-menu {
+				background-color: #d12a30;
+				transition: all 0.5s ease;
+				border: 1px solid #d12a30;
+				padding: 5px 25px !important;
+				&:hover {
+					border-color: #d12a30;
+					background-color: #fff;
+					color: #d12a30;
+				}
+			}
+		}
+	}
+	.restaurant-photo {
+		width: 48% !important;
+		max-width: 48% !important;
+		.restaurant {
+			height: 225px;
+			border: 7px solid #fff;
+			box-shadow: 5px 5px 5px #5e5f61;
+		}
+	}
+	.fl-col.fl-col-small:first-of-type {
+		height: 210px;	
+		width: 11.75% !important;
+		margin: auto 0 auto 5%;
+		padding: 0;
+	}
+	.fl-col.fl-col-small:nth-of-type(2) {
+	    height: auto !important;
+	}
+	.fl-col.fl-col-small:nth-of-type(3) {
+		width: 28% !important;
+		margin-right: 5%;
+		padding: 0;
+		.fl-module-content {
+		    margin: 10px 0px;
+		    border: 7px solid #fff;
+		    box-shadow: 5px 5px 5px #5e5f61;
+		}
+	}
+}
+
+/* *********************************** */
+/* BISTRO MENU */
+/* *********************************** */ 
+.course-section {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0;
+		line-height: 1.2;
+	}
+	.item-price {
+		position: relative;
+		span.price {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	.image-container {
+	    width: auto;
+	}
+	&:first-of-type {
+		width: 100%;
+		-webkit-columns: 2 300px;
+		-moz-columns: 2 300px;
+		columns: 2 300px;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+		column-gap: 2em;
+		-webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+		h1 {
+		  -webkit-column-span: all;
+		  -moz-column-span: all;
+		  column-span: all;
+		  font-size: 2em;
+		  margin-bottom: 0.5em;
+		  line-height: 1.2;
+		}
+	}
+	&:nth-of-type(4) {
+		clear: both;
+	}
+}
+
+/* *********************************** */
+/* JOIN EMAIL LIST / TICKETS section */
+/* *********************************** */
+#join-email-tickets-container {
+	.btn.btn-lg {
+		width: 300px; 
+		&.tickets {
+			margin: 10px 20px;
+		}		
+	}
+}

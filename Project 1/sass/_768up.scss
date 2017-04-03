@@ -1,0 +1,1228 @@
+/******************************************************************
+  
+Stylesheet: Tablet Stylesheet
+Author: 2060 Digital
+
+This stylesheet will affect tablet-size (or small desktop) screens.
+
+******************************************************************/
+
+/* 
+Keep in mind that most customizations can and should be done in
+the Wordpress theme customizer. This file only exists for anything 
+that can't be accomplished with the theme customizer/page builder.
+*/
+
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+.fl-page-header-logo {
+	width: 200px;
+	display: block;
+	margin: 0;
+}
+
+#menu-container {
+	display: none;
+}
+
+#twentysixty-after-header {
+	.fl-page-header-container.container {
+		padding-top: 0;
+		.fl-page-header-row.row {
+			.col-md-4.col-sm-12 {
+				width: 50%;
+				.fl-page-header-logo {
+					margin-right: 5px;
+					padding-bottom: 0;
+					height: 135px;
+					.fl-logo-img {
+						position: absolute;
+						left: 10px;
+						top: 10px;
+						z-index: 100;
+						height: auto !important;
+						max-height: auto !important;
+						width: 130px !important;
+					}
+				}
+			}
+			.fl-page-nav {
+				.navbar-nav {
+					li {
+						margin-left: 11px;
+						margin-right: 11px;
+						a {
+							padding: 15px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.fl-page-nav-collapse.navbar-collapse.collapse, .fl-page-nav-collapse.navbar-collapse.collapse.in {
+	border: none;
+	left: auto;
+	top: 0 !important;
+	right: 0;
+	width: 100%;
+	margin: 0px auto;
+	display: block;
+	position: relative !important;
+	#menu-main-menu-2 { 
+		border: none;
+	}
+}
+
+.connect-with-us {
+	float: right;
+	display: block;
+	span { 
+		color: #157f84 !important;
+		float: left;
+		height: 43.75px;
+		line-height: 43.75px;
+		margin: 10px;		
+		&:last-of-type {
+			margin-right: 0;
+			font-weight: bold;
+		}
+	}
+	span.fl-icon {
+		margin: 10px;
+		display: inline-block;
+		vertical-align: middle;
+		a {
+			text-decoration: none;
+			i {
+				color: #1a202c;
+				font-size: 25px;
+				height: auto;
+			    width: auto;
+			    background: #157f84;
+			    border-radius: 100%;
+			    -moz-border-radius: 100%;
+			    -webkit-border-radius: 100%;
+			    line-height: 43.75px;
+			    height: 43.75px;
+			    width: 43.75px;
+			    text-align: center;
+			    transition: all 0.5s ease;
+			    &.fa.fa-twitter:before {
+				    content: "\f099";
+			    }
+			    &.fa.fa-facebook:before {
+				    content: "\f09a";
+			    }
+			    &.fa.fa-instagram:before {
+				    content: "\f16d";
+			    }
+			}
+		}
+		&:hover {
+			a {
+				i {
+					color: #157f84;
+					background: #1a202c;
+				}
+			}
+		}		
+	}	
+}
+
+#twentysixty-after-header {
+	.fl-page-header.fl-page-header-primary.fl-page-nav-right.fl-page-nav-toggle-icon {
+		.fl-page-header-wrap {
+			.fl-page-header-container {
+				border-bottom: 0;
+				.fl-page-header-row.row {
+					.col-md-4.col-sm-12 {
+						width: 25%;
+						float: left; 
+					}
+					.fl-page-nav-col.col-md-8.col-sm-12 {
+						width: 70%;
+						padding: 10px 0 4px 0;
+						float: right;
+						.fl-page-nav-wrap {
+							border: none;
+							.connect-with-us {
+								text-align: center;
+								display: block;
+								float: none;
+								span {
+									float: none !important;
+									&:first-of-type {
+										margin-left: 0;
+									}
+									&:last-of-type {
+										float: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#twentysixty-after-header .fl-page-header-container.container .fl-page-header-row.row .col-md-4.col-sm-12 .fl-page-header-logo .fl-logo-img {
+    height: 210px !important;
+    max-height: 210px !important;
+    width: auto !important;
+    position: absolute;
+    z-index: 50;
+    top: 10px;
+    left: 10px;
+}
+
+/* MOBILE TOP - SOCIAL ICONS/PHONE */
+#twentysixty-before-header {
+	display: none;
+}
+
+/* *********************************** */
+/* SHOWS FILTER */
+/* *********************************** */
+#shows-filter {
+	width: 100%;
+	height: 41px;
+	margin: 0;
+	padding: 0 20px;
+}
+#filter-container {
+	display: block;
+}
+#filter-container-mobile.primary-navigation-m{
+	display: none;
+}
+
+/* *********************************** */
+/* SHOWS! */
+/* *********************************** */
+#outer-shows-container {
+	width: 100%;
+	height: 100%;
+	min-height: 504px;
+	display: block;
+	margin-top: 20px;
+	#no-shows-text {
+		height: 100px;
+	}
+	.show-card-container {
+		width: 49%;
+		margin: 0 0.5% 20px 0.5%;
+		height: 232px;
+		min-height: 232px;
+		float: left;
+		.show-date {
+			width: 100%;
+		}
+		.show-info {
+			color: #1a202c;
+			display: block;
+			width: 100%;
+			height: 200px; 
+			.show-image, .tribe-events-event-image {
+				width: 44%;
+			}
+			.show-title {
+				padding: 15px 0px 0px 10px;
+				height: 200px;
+				width: 56%;
+				.show-button-container {
+					position: absolute;
+					bottom: 10px;
+					right: 0;
+					left: 10px;
+					.btn.btn-lg {
+						width: 190px;
+						height: 26px !important;
+						line-height: 18px !important; 	
+						&.more-info {
+							margin-top: 15px;
+						}
+					}
+				}
+				.title {
+					font-size: 20px;
+					line-height: 22px;	
+					display: block;
+				}
+				span {
+					display: block;
+					font-size: 16px;
+					line-height: 18px;
+				}
+			}	
+		}
+		&.past-show {
+			width: 100%;
+			height: 80px;
+			min-height: 80px;
+			max-height: 100px;
+		    margin: 0 0 20px 0;
+			.show-date {
+				span.bg-horizontal-position, span.bg-vertical-position, span.permalink, span.ticketmaster-link {
+					display: none !important;
+				}
+			}
+			.show-info {
+				height: 100px;
+				width: 100%;
+				.show-image {
+					display: none;
+				}
+				.show-title {
+					height: 45px;
+					width: 100%;
+					padding: 5px 210px 10px 5px !important;
+					.show-button-container {
+						.btn.btn-lg {
+							float: right;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-title, .mobile-supporting-band {
+		display: none !important;
+	}
+	
+	.individual-show-container {
+		display: none; 
+		margin: auto;
+	    position: fixed;
+	    z-index: 1000;
+	    top: 10%;
+	    left: 50%;
+	    transform: translate(-50%, 0%);
+	    padding: 0;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center top; 
+	    width: 100%;
+	    min-height: 568px;
+	    border: 1px solid #fff;
+	    transition: all 0.4s ease;
+	    .image-zoom {
+			display: none;
+			width: 500px;
+			height: 350px;
+			position: absolute;
+			background-size: cover;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			z-index: 1005;
+			background-repeat: no-repeat;
+			box-shadow: 5px 5px 5px #888888;		
+			.close-zoomed-image {
+			    display: block;
+			    position: absolute;
+			    top: 8px;
+			    right: 8px;
+				padding: 0;
+			    z-index: 1006;
+			    border: 1px solid #000;
+			    border-radius: 20px !important;
+			    height: 25px;
+			    width: 25px;
+			    background-color: #fff;
+			    text-align: center;
+			    color: #000;
+			    cursor: pointer;
+			    transition: all 0.4s ease-in-out;
+			    &:hover {
+				    background-color: #157f84;
+				    color: #fff;
+			    }
+		    }
+	    }
+	    
+	    .close-show {
+		    position: absolute;
+		    right: 8px;
+		    top: 8px;
+		    border: 1px solid #000;
+		    border-radius: 20px !important;
+		    padding: 2px 10px !important;
+		    background-color: #fff;
+		    color: #000;
+		    transition: all 0.4s ease;
+		    font-size: 18px !important;
+		    height: 32px;
+		    width: 32px;
+		    text-align: center;
+		    &:hover {
+			    background-color: #157f84;
+			    color: #fff;
+		    }
+	    }
+	    .bottom-close-show {
+		    position: relative;
+		    display: block;
+		    margin: 5px auto;
+		    height: 40px;
+		    width: 91px;
+		    border: 1px solid #000;
+		    border-radius: 20px !important;
+		    padding: 5px 15px !important;
+		    background-color: #fff;
+		    color: #000;
+		    transition: all 0.4s ease;
+		    font-size: 18px !important;
+		    &:hover {
+			    background-color: #157f84;
+			    color: #fff;
+		    }
+	    }
+	    #individual-artist-container {
+		    background-color: #1a202c;
+		    text-align: center;
+		    h1.show-title {
+			    margin: 0;
+			    padding: 10px 30px 5px 30px;
+			    color: #fff;
+			    text-transform: uppercase;
+			    font-size: 26px;
+			    line-height: 1.1;
+			}
+			.supporting-bands {
+				color: #fff;
+				&:empty {
+					display: none;
+				}
+			}
+		}
+	    #show-details {
+		    position: relative;
+		    display: block;
+		    background-color: rgba(255, 255, 255, 0.75);
+		    padding-left: 240px;
+		    .artist-img {
+			    background-size: cover;
+			    width: 240px;
+			    height: 168px;
+			    position: absolute;
+			    z-index: 100;
+			    left: 0;
+			    &.center {
+				    background-position: center top;
+			    }
+			    &.right {
+				    background-position: right top;
+			    }
+			    &.left {
+				    background-position: left top;
+			    }
+		    }
+		    .click-zoom {
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+			    z-index: 101;
+			    width: 240px;
+			    text-align: center;
+			    color: #1a202c;
+			    padding-top: 10px;
+			    font-weight: bold;
+			    cursor: pointer;
+			    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+				background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+				.fl-icon {
+					display: inline-block;
+					padding-bottom: 3px;
+				}
+		    }
+		    .date-time {
+			    h3 {
+				    background-color: #157f84;
+				    color: #fff !important;
+			    }
+			    h3, h4 {
+				    margin: 5px 0;    
+					padding: 0 5px;
+				    font-weight: bold;
+			    }
+			    h4 {
+				    font-size: 16px;
+			    }
+			}
+		    .btn.purchase {
+			    position: absolute;
+			    right: 10px;
+			    top: 16px;
+			    bottom: 0;
+			    background-color: #d12a30;
+			    height: 40px;
+			    margin: auto 0;
+			    line-height: 18px;
+			    border-radius: 0;
+		    }
+	    }
+	    
+	    #connect, #share {
+		    display: inline-block;
+		    width: 50%;
+		    background-color: #157f84;
+		    float: left;
+		    padding: 5px 10px;
+		    margin-bottom: 5px;
+		    h4, .fl-icon-group {
+			    color: #fff;
+			    display: inline-block;
+			    margin: 0;
+			    .fl-icon {
+				    padding: 0 10px;
+			    }
+		    }
+		    h4 {
+			    font-weight: bold;
+			    line-height: 18px;
+		    }
+		    .fb-share-button, .fl-icon, a {
+			    display: inline-block;
+			    vertical-align: middle;
+			    height: 23px;
+			    
+			    > span {
+				    display: block;
+				    height: 25px;
+				    vertical-align: middle;
+			    }
+		    }
+		    .fb_iframe_widget_fluid span {
+			    display: block;
+		    }
+		    .email {
+			    height: 20px;
+				display: block;
+		    }
+	    }
+	    #share {
+		    .fb-share-button, .fl-icon, a .email {
+			    margin: 0 10px;
+		    }
+	    }
+	    #connect {
+		    .fl-icon {
+			    i.fa {
+				    vertical-align: top;
+			    }
+		    }
+	    }
+	    
+	    #bio-details {
+		    position: relative;
+		    display: block;
+		    background-color: rgba(255, 255, 255, 0.85);
+		    clear: both;
+		    h3 {
+			    text-align: center;
+			    background-color: #157f84;
+			    color: #fff !important;
+			    margin-bottom: 0;
+		    }
+		    .bio-content {
+				height: 310px;
+				overflow: scroll;
+				overflow-x: auto;
+				padding: 10px;
+				color: #000;
+				margin-bottom: 0;
+			}
+	    }
+	    .chevron {
+			position: absolute;
+			right: 20px;
+			bottom: 10px;
+			transform: rotate(0deg);
+			transition: all 0.5s ease;
+			width: 35px;
+			cursor: pointer;
+			display: none;
+			&.show-chevron {
+				display: block;
+			}
+			&#bottom.top-chevron {
+				transform: rotate(180deg);
+			}
+		}   
+	}
+}
+
+.tribe-event-time {
+	display: none;
+}
+
+.fa-link {
+	font-size: 30px;
+    height: 23px;
+    width: auto;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    vertical-align: top;
+}
+.fa-link:before { 
+	content: "\f0c1";
+}
+
+.overlay {
+	overflow: hidden;
+	&:before {
+		content: " ";
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    z-index: 1000;
+	    top: 0;
+	    left: 0;
+	    background: rgba(0, 0, 0, 0.5);
+	}
+}
+
+/* *********************************** */
+/* INDIVIDUAL SHOW */
+/* *********************************** */
+.single-tribe_events {
+	.fl-content.col-md-12 {
+		margin: 30px 0;
+		.fl-post-header {
+			display: block;
+		}
+		#mobile-date {
+			display: none;
+		}
+		#tribe-events-content.tribe-events-single {
+			margin-bottom: 0;
+			.tribe-events-back {
+				margin-bottom: 10px !important;
+				margin-top: 30px;
+				text-align: left;
+			}
+			.tribe-events-single-event-title {
+				text-align: center;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			#tribe-events-header {
+				display: none;
+			}
+			.show-image {
+				width: 40%;
+			}
+			.tribe-events-schedule.tribe-clearfix {
+				width: 59%;
+			    margin: 0 0 20px 1%;
+			    height: 275px;
+			    #when-event {
+				    display: block;
+			    }
+			    .purchase {
+			        margin: 5px 0;
+			        transition: all 0.5s ease;
+			        display: inline-block;
+			        &:hover {
+				        background-color: #fff;
+						color: #d12a30;
+						border-color: #d12a30;
+			        }
+			    }
+			    .tribe-events-cal-links {
+				    text-align: left;
+			    }
+			}
+			#social-media {
+			    margin-bottom: 20px;
+			    > .fl-icon-group.fl-icon-group-center, > #share {
+				    width: 49%;
+			    }
+			}
+		}
+	}
+}
+
+/* *********************************** */
+/* JOIN EMAIL LIST / TICKETS section */
+/* *********************************** */
+#join-email-tickets-container {
+	text-align: center;
+	padding: 15px 0;
+	.btn.btn-lg {
+		border-radius: 0;
+		background-color: #d12a30;
+		border-style: outset;
+		border: 1px solid #d12a30;
+		transition: all 0.5s ease;
+		width: 30%;
+		display: inline-block;
+		&.email-list, &.vip-club {
+			margin: 10px 0;
+		}	
+		&.tickets {
+			margin: 10px 15px;
+		}
+		&:hover {
+			color: #d12a30;
+			background-color: #fff;
+			border: 1px solid #d12a30;
+		}
+		&:focus {
+			outline-color: #157f84;
+		}
+		&.vip-club {
+			background-color: #1a202c;
+			font-weight: bold;
+			border-color: #fff;
+			&:hover {
+				background-color: #fff;
+				border-color: #1a202c;
+			}
+		}
+	}
+}
+
+/* *********************************** */
+/* CONTENT */
+/* *********************************** */
+.venue {
+	color: #157f84;
+}
+
+.fl-row:first-of-type {
+	.fl-module.fl-module-rich-text {
+		.fl-module-content.fl-node-content {
+			margin-top: 30px;
+			.fl-rich-text {
+				h2:first-of-type {
+					margin-top: 20px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+.fl-rich-text {
+	h2:first-of-type {
+		text-align: left !important;
+	}
+}
+
+/* *********************************** */
+/* INFO */
+/* *********************************** */
+#info-container {
+	.fl-module-content.fl-node-content {
+		margin-top: 0;
+	}
+}
+.nav-tabs {
+	padding: 0;
+	display: block;
+	> li > a {
+		padding: 10px 7px;
+	}
+}
+.tab-content {
+	padding: 0 20px;
+}
+
+.mobile.nav.nav-tabs {
+	display: none;	
+}
+
+.fl-tabs-panel .fl-tabs-label.fl-tabs-panel-label {
+	display: none;
+}
+
+.fl-tabs-labels {
+	display: block;
+	.fl-tabs-label {
+	    padding: 12px 14px;
+	    float: left;
+	}
+}
+
+.fl-tabs-panel {
+	border-bottom-width: 0px;
+}
+
+.fl-tabs-panel-content {
+    padding: 15px;
+}
+
+.fl-tabs-horizontal .fl-tabs-label.fl-tab-active {
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: none !important;
+    padding: 11px 18px 12px;
+    top: 1px;
+    position: relative;
+    background-color: #1a202c;
+    color: #fff;
+}
+
+/* *********************************** */
+/* EAT AT LUDLOW GARAGE */
+/* *********************************** */ 
+#eat-at-the-ludlow-garage {
+	.fl-col-content.fl-node-content {
+		position: relative;
+	}
+	#eat-at-lg-logo {
+		height: 200px;
+	    overflow: auto;
+	    margin: auto;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    padding: 0;
+		.fl-photo-img {
+			height: 180px !important;
+		}
+	}
+	#call-for-reservation {
+		height: 233px;
+		width: 100%;
+	    overflow: auto;
+	    margin: auto;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+		.fl-module-content.fl-node-content {
+			height: 102px;
+			margin-top: 0;
+			position: absolute !important;
+		    top: 0 !important;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+			.fl-rich-text {
+				p:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.view-menu {
+			background-color: #d12a30;
+			transition: all 0.5s ease;
+			border: 1px solid #d12a30;
+			padding: 5px 25px !important;
+			&:hover {
+				border-color: #d12a30;
+				background-color: #fff;
+				color: #d12a30;
+			}
+		}
+	}
+	#restaurant-img {
+		.fl-photo-img {
+			height: 225px !important;
+			border: 7px solid #fff;
+			box-shadow: 5px 5px 5px #5e5f61;
+		}
+	}
+	.fl-col.fl-col-small:first-of-type {
+		height: 180px;
+		display: inline-block;
+		float: left;
+		max-width: 23.75% !important;
+		padding: 0 5px;
+		margin: 26.5px 0 26.5px 1.5%;		
+	}
+	.fl-col.fl-col-small:nth-of-type(2) {
+	    height: 233px;
+	    display: inline-block;
+	    width: 29.25% !important;
+		margin: auto 0;
+		clear: none;
+		float: left;
+	}
+	.fl-col.fl-col-small:nth-of-type(3) { 
+		clear: none;
+		float: left;
+		max-width: 44%;
+		margin-right: 1.5%;
+		.fl-module-content {
+	    	border: 7px solid #fff;
+			box-shadow: 5px 5px 5px #5e5f61;
+		}
+	}	
+	.fl-col-group.fl-col-group-equal-height {
+		text-align: center;
+	}
+}
+
+/* *********************************** */
+/* BISTRO MENU */
+/* *********************************** */ 
+#outer-menu-container {
+	> h1 {
+		font-size: 45px;
+	}
+}
+.course-section {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0;
+		line-height: 1.2;
+	}	
+	.menu-item {
+		.item-price {
+			position: relative;
+			h3 {
+				margin-top: 10px;
+			}
+			span.price {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+	.image-container {
+	    width: 75%;
+	}
+	&:first-of-type {
+		width: 100%;
+		-webkit-columns: 2 300px;
+		-moz-columns: 2 300px;
+		columns: 2 300px;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+		column-gap: 2em;
+		.menu-item {
+			-webkit-column-break-inside: avoid;
+	        page-break-inside: avoid;
+	        break-inside: avoid;
+        }
+		h1 {
+		  -webkit-column-span: all;
+		  -moz-column-span: all;
+		  column-span: all;
+		  font-size: 2em;
+		  margin-bottom: 0.2em;
+		  line-height: 1.2;
+		}
+	}
+	&:nth-of-type(4) {
+		clear: both;
+	}
+}
+	
+
+
+/* *********************************** */
+/* UPCOMING SHOWS carousel section */
+/* *********************************** */
+.carousel-inner { 
+	height: 320px;
+	.item {
+		.performer-img {
+			background-size: cover;
+		    width: 50%;
+		    height: 320px;
+		    float: left; 
+		    .eat-slide-logo {
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    width: 40%;
+		    }
+		}
+		.carousel-show-info-m {
+			display: none;
+		}	
+		.carousel-show-info {
+			float: right;
+			width: 50%;
+			height: 320px;
+			display: block;
+			text-align: center;
+			background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 99%, rgba(0,0,0,0.98) 100%);
+			background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.98) 100%);
+			background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.98) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fa000000',GradientType=1 );
+			line-height: 26px;
+			font-size: 18px; 
+			color: #fff;
+			position: relative;
+			z-index: 0;
+			.show-text {	
+				width: 70%;
+				margin: auto;
+				position: absolute;
+				top: 50%; left: 0; right: 0;
+				transform: translateY(-50%); 
+				.title {
+					font-size: 24px; 
+					line-height: 28px;
+				}
+				.btn.get-tickets {
+					background-color: #d12a30;
+					color: #ffffff !important;
+					border-radius: 0;
+					animation: all 0.4s ease;
+					
+				}	
+			}
+		}
+	}
+}
+
+/* *********************************** */
+/* CONTACT */
+/* *********************************** */
+#ContactForm {
+	padding: 0;
+	.gfield, .gform_footer.top_label {
+		padding-left: 16px;
+	}
+}
+
+/* *********************************** */
+/* FOOTER */
+/* *********************************** */
+#twentysixty-body-close {
+	.btn.btn-lg {
+		display: inline-block;
+		&.join-email-list {
+			background-color: #d12a30;
+			margin: 10px;
+		}
+		&.parking-info {
+			background-color: #157f84;
+			margin: 10px;
+		}
+	}	
+	select {
+		font-size: 18px;
+	}
+	.footer-logo .fl-logo-img {
+		max-height: 100px;
+		width: auto;
+	}
+	.modal { 
+		&.parking, &.emailList {
+			.modal-dialog {
+				-webkit-transform: translate(0, 0);
+			    -ms-transform: translate(0, 0);
+			    -o-transform: translate(0, 0);
+			    transform: translate(0px, 0);
+			    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+			    -o-transition: -o-transform 0.5s ease-out;
+			    transition: transform 0.5s ease-in-out;
+			    position: fixed;
+			    transform: translate(0%, 0);
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+			    
+			}
+			&.in .modal-dialog {
+				-webkit-transform: translate(0, 0);
+			    -ms-transform: translate(0, 0);
+			    -o-transform: translate(0, 0);
+			    position: fixed;
+			    transform: translate(0, 0);
+			    top: 0%;
+			    left: 0%;
+			}
+			.modal-title {
+				text-align: center;
+				font-size: 24px;
+			}
+		}
+		&.parking .modal-dialog {
+			height: 600px !important;
+			width: 600px !important;
+		}
+		&.emailList .modal-dialog {
+			height: 272px !important;
+			width: 600px !important;
+		    overflow: visible;
+		    transition: height 0.5s ease; 
+		    &.error {
+			    height: 395px !important;
+		    }
+			.modal-content {
+				height: auto;
+			    .modal-body {
+				    position: relative !important;
+				    margin-bottom: 20px !important;
+				    height: auto;
+				    #gform_wrapper_2 {
+						margin-top: 0;
+						#gform_2 {
+							#gform_fields_2 {
+								> #field_2_2 {
+									margin: 0 !important;
+									padding: 0 !important;
+									width: 40% !important;
+									display: inline-block !important;
+									vertical-align: top !important;
+									.ginput_container {
+										margin-top: 0;
+										.name_first {
+											padding-top: 0;
+										}
+									}
+									#input_2_2 {
+										> #input_2_2_3_container {
+											label {
+												display: none;
+											}
+										}
+									}
+								}
+								> #field_2_1 {
+									margin: 0 !important;
+									padding: 0 !important;
+									width: 60% !important;
+									display: inline-block !important;
+									vertical-align: top !important;
+									.ginput_container_email {
+										margin-top: 0;
+									}
+								}
+							}	
+							.gform_footer.top_label {
+								padding: 0 !important;
+								margin-top: 15px !important;
+								> #gform_submit_button_2 {
+									background: #1a202c;
+									color: #fff;
+									width: 40%;
+								    margin: 0 auto !important;
+								    display: block;
+								    border: 1px solid #1a202c !important;
+								    transition: all 0.4s ease;
+									&:hover {
+										background-color: #fff;
+										color: #1a202c;
+									}
+								}
+							}
+						}
+					}
+				}
+		    }
+		}
+	}	
+}
+
+/* ******************
+	EVENTBRITE
+****************** */
+#tribe-events-photo-events {
+	.type-tribe_events.tribe-events-photo-event {
+	    width: 49%;
+	    margin: 0 0.5% 20px 0.5%;
+	    height: 232px;
+	    min-height: 232px;
+	    float: left;
+	    position: relative !important;
+	}
+}
+
+/* *********************************** */
+/* 404 Page */
+/* *********************************** */
+.error404 {
+	.fl-page-content {
+		.container#page404 {
+			.row {
+				display: block;
+			    background-size: contain;
+			    height: 700px;	
+			    background-repeat: no-repeat !important;
+				.fl-content.col-md-8 {		
+					margin: 0 auto;
+					display: block;
+					float: none;	
+					background-color: rgba(0,0,0,0.5);		
+				    .fl-post.fl-404 {
+					    padding: 50px 0 0;
+					    .fl-post-header {
+						    margin-bottom: 0;
+						    h2.fl-post-title {
+							    color: #fff;
+							    text-shadow: 2px 2px 2px black;
+						    }
+						    h3 {
+							    color: #fff;
+							    text-shadow: 1px 1px 1px black;
+						    }
+					    }
+				    }				
+				}
+				.fl-content.col-md-6 {	
+					margin: 0;
+					background-color: rgba(0,0,0,0.5);
+					.fl-post.fl-404 {
+					    padding: 25px 0;
+					    .fl-post-header {
+						    h2.fl-post-title {
+							    color: #fff;
+							    text-shadow: 2px 2px 2px black;
+						    }
+						    h3 {
+							    color: #fff;
+							    text-shadow: 1px 1px 1px black;
+						    }
+					    }
+					    .error-404.eat-slide-logo {
+						    width: 50%;
+						    height: auto;
+					    }
+					    p {
+						    color: #fff;
+						    font-weight: bold;
+						    text-decoration: underline;
+						    font-size: 18px;
+					    }
+					    h4 a {
+						    color: #fff;
+							text-shadow: 2px 2px 2px black;
+							transition: all 0.4s ease;
+							&:hover {
+								text-decoration: underline;
+							}
+					    }
+					    h3 {
+						    margin-bottom: 0;
+						    margin-top: 10px;
+					    	a {
+							    color: #d12a30;
+							    text-decoration: underline;
+							    margin-bottom: 0;
+						    }
+					    }
+				    }	
+				}
+			}
+		}
+	}
+}

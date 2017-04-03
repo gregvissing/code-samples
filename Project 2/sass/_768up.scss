@@ -1,0 +1,663 @@
+/******************************************************************
+  
+Stylesheet: Tablet Stylesheet
+Author: 2060 Digital
+
+This stylesheet will affect tablet-size (or small desktop) screens.
+
+******************************************************************/
+
+/* 
+Keep in mind that most customizations can and should be done in
+the Wordpress theme customizer. This file only exists for anything 
+that can't be accomplished with the theme customizer/page builder.
+*/
+ 
+/* Layout */
+.fl-row-content-wrap {
+	.fl-row-content {
+		.fl-col-group {
+			.fl-col:first-of-type {
+				.fl-col-content {
+					.fl-module-rich-text, .fl-module-contact-form, .fl-module-gallery, .fl-module-contact-form, .fl-module-accordion, .fl-module-widget {
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Top Bar Cols */
+#top-bar-cols, #twentysixty-before-top-bar {
+	.col-md-4 {
+		a.call {
+			display: none;
+		}
+		.desktop-call, .fa-phone.desktop {
+			display: inline-block;
+		}
+	}
+}
+
+/* Sidebar */
+a.fl-button {
+	font-size: 21px !important;
+}
+
+.fl-button-text {
+	font-size: 17px !important;
+    line-height: 30px !important;
+}
+
+.fl-icon-group-center .fl-icon {
+	margin-left: 12px !important;
+	margin-right: 12px !important;
+}
+
+.fl-builder-content .fl-button i {
+	font-size: 1.3em !important;	
+}
+
+#voiceChoice {
+	.fl-module-content {
+		.fl-button-wrap {
+			.fl-button {
+				height: 58px;
+			}
+		}
+	}
+}
+.sidebar-video {
+	> .fl-module-content {
+		margin: 20px 20px 0 20px; 
+		.mejs-overlay.mejs-layer.mejs-overlay-play {
+			background-color: rgba(0, 0, 0, 1) !important;	
+		}
+	}	
+}
+
+/* Bottom Bar Cols */
+#bottom-bar-cols {	
+	.col-md-4 { 
+		color: #BCBCBF;
+		text-align: center;	
+		padding: 10px;
+		span {
+			display: block;
+			font-size: 25px;
+			.fa-phone {
+				color: #fff;
+			}
+		}
+		.footer-logo {
+			width: 550px;
+			padding: 0 100px; // new
+		}
+		.our-partners {
+			color: #fff;
+			font-size: 25px;
+		}
+		.phone-number-footer {
+			font-weight: bold;
+		}
+		.address-footer {
+			font-size: 16px;
+		}
+		.call-us-footer {
+			color: #fff;
+		}
+		#partners-footer {
+			list-style-type: none;
+			padding-left: 0;
+			width: 420px;
+			margin: 0 auto;
+			display: inline-block;
+			li {
+				float: left;
+				display: inline-block;
+				width: auto;
+				padding: 0 5px;
+				img {
+					width: auto;
+					height: 36px;
+				}
+			}
+		}
+	}
+	.middle-footer {
+		border-left: 1px solid #55555e;
+		border-right: 1px solid #55555e;
+	}
+}
+
+#twentysixty-after-footer {
+	background-color: #666673;
+	padding: 22px 0 0 0;
+	border-top: 3px solid #70cce3;
+	.hipaa {
+		background-color: #e4e4e5; 
+		padding: 5px 0;
+		a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+}
+
+.fl-page-footer {
+	display: none;
+}
+/* Navigation */
+.fl-page-header {
+	.fl-page-header-container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.fl-page-header-row {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			.col-md-4 {
+				width: 15%;
+				padding-right: 0;
+				.fl-page-header-logo {
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-bottom: 0;
+				}
+			}
+			.col-md-8 {
+				width: 85%;
+				padding-left: 0;
+				.fl-page-nav-wrap {
+					position: relative;
+					border: none;
+					margin: 0;
+					display: block;
+					height: 100%;
+					width: 100%;
+					.fl-page-nav {
+						margin: auto 0;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						height: 22px;
+					}
+					.navbar-nav {
+						> .menu-item {
+							> a {
+								padding: 0 6px !important;
+							}	
+						}
+						.menu-item:first-of-type {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.fl-page-fixed-nav-wrap .fl-page-nav-wrap {
+	.fl-page-nav #menu-main-navigation {
+		> li {
+			> a {
+				padding: 10px 16px !important;
+			}
+			&:first-of-type {
+				display: none;
+			}
+		}
+	}
+}
+
+.sub-menu {
+	> li {
+		display: inline-block !important;
+		text-align: left;
+	}
+}
+
+/* Patient Stories */
+.patient-story {
+	width: 33%;
+	display: inline-block;
+	float: left;
+	padding: 20px;
+	text-align: left;
+	img {
+		display: block;
+		margin: 0 auto;
+		border: 5px solid #e4e4e5;
+	}
+	span {
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
+}
+
+.fl-post-header {
+	.image-name-container {
+		display: inline-block;
+		float: left;
+		width: 36%;
+		img {
+			border: 5px solid #e4e4e5;
+		}
+		h1 {
+			text-align: center;
+			font-family: Montserrat;
+		}
+	}
+	.patient-story-content {
+		display: inline-block;
+		float: none;
+		width: 60%;
+		padding: 0 15px;		
+		.fl-row-content-wrap {
+			padding-top: 0;
+			.fl-module-content {
+				margin-top: 0;
+				h2 {
+					margin-top: 0;
+					font-family: 'Montserrat Light', arial;
+				}
+			}
+		}
+	}
+	.read-more-stories {
+		display: block;
+		text-align: center;	
+		margin-bottom: 20px;
+	}
+}
+
+/* Careers */
+.careers .fl-module-content {
+	position: relative;
+	input {
+		margin: 5px;
+	}
+	.primary-navigation-m {
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		position: absolute;
+		z-index: 500;
+		width: 45%;
+		#jobs-filter{
+			list-style-type: none;
+			display: block;
+			float: left;
+			z-index: 10;
+			text-align: center;
+			width: 100%;
+			cursor: pointer;
+			> li {
+				padding: 0;
+				position: relative;
+				#mobile-press {
+					padding: 5px;
+					display: block;
+				}
+				.chevron {
+					width: 20px;
+					position: absolute;
+					right: 10px;
+					margin: auto 0;
+					top: 0;
+					bottom: 0;
+					-webkit-transition-duration: 0.7s;
+					-moz-transition-duration: 0.7s;
+					-o-transition-duration: 0.7s;
+					transition-duration: 0.7s;
+					-webkit-transition-property: -webkit-transform;
+					-moz-transition-property: -moz-transform;
+					-o-transition-property: -o-transform;
+					transition-property: transform;
+				}
+			}
+			.inner-primary-navigation-m {
+				display: none;
+				list-style-type: none;
+				text-align: left;
+				padding: 0;
+				position: relative !important;
+				overflow: hidden;
+				background-color: white;
+				border-top: 1px solid black !important;
+				> li {
+					padding: 5px;
+					display: block;
+					border-bottom: 1px solid #d3d3d3;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+				.SelectAllClose {
+					line-height: 34px;
+					input {
+						float: left;
+						cursor: pointer;
+					}
+					input {
+						margin: 10px 5px;
+					}
+					.btn {
+						float: right;
+					}
+					#label {
+						cursor: pointer;
+						margin-bottom: 0;
+					}
+				}
+			} 
+		}
+		.filter-text {
+			padding: 5px 10px 5px 5px;
+		}
+		#jobs-filter {
+			border: 1px solid black;
+			padding: 0;
+		}
+	}
+	.primary-navigation-m-loc {
+		display: inline-block;
+		float: right;
+		overflow: hidden;
+		position: absolute;
+		z-index: 500;
+		width: 45%;
+		right: 0;
+		#locations-filter {
+			list-style-type: none;
+			display: block;
+			float: right;
+			z-index: 10;
+			text-align: center;
+			width: 100%;
+			cursor: pointer;
+			> li {
+				padding: 0;
+				position: relative;
+				#mobile-press-loc {
+					padding: 5px;
+					display: block;
+				}
+				.chevron-loc {
+					width: 20px;
+					position: absolute;
+					right: 10px;
+					margin: auto 0;
+					top: 0;
+					bottom: 0;
+					-webkit-transition-duration: 0.7s;
+					-moz-transition-duration: 0.7s;
+					-o-transition-duration: 0.7s;
+					transition-duration: 0.7s;
+					-webkit-transition-property: -webkit-transform;
+					-moz-transition-property: -moz-transform;
+					-o-transition-property: -o-transform;
+					transition-property: transform;
+				}
+			}
+			
+			.inner-primary-navigation-m-loc {
+				display: none;
+				list-style-type: none;
+				text-align: left;
+				padding: 0;
+				position: relative !important;
+				overflow: hidden;
+				background-color: white;
+				border-top: 1px solid black !important;
+				> li {
+					padding: 5px;
+					display: block;
+					border-bottom: 1px solid #d3d3d3;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+				.SelectAllClose {
+					line-height: 34px;
+					input {
+						float: left;
+						cursor: pointer;
+					}
+					input {
+						margin: 10px 5px;
+					}
+					.btn {
+						float: right;
+					}
+					#label {
+						cursor: pointer;
+						margin-bottom: 0;
+					}
+				}
+			} 
+		}
+		.filter-text {
+			padding: 5px 10px 5px 5px;
+		}
+		#locations-filter {
+			border: 1px solid black;
+			padding: 0;
+		}
+	}
+}
+.fl-module.careers {
+	padding: 10px;
+	.reset-filter {
+		margin-top: 50px;
+		color: #70CCE3;
+		display: inline-block;
+		cursor: pointer;
+	}
+	#outer-jobs-container {
+		display: block;
+		position: relative;
+		z-index: 2;
+		#job-top-container {
+			background-color: #d3d3d3;
+			> .job-title-top {
+				width: 50%;
+				display: inline-block;
+				font-weight: bold;
+				padding: 5px;
+			}
+			> .job-location-top {
+				width: 28%;
+			}
+			> .job-post-date-top {
+				width: 20%;
+			}
+			> .job-location-top, > .job-post-date-top {
+				display: inline-block;
+				font-weight: bold;
+				padding: 5px;
+				text-align: center;			
+			}
+		}
+		#accordion {
+			border-left: 1px solid #d3d3d3;
+			border-right: 1px solid #d3d3d3;
+			border-bottom: 1px solid #d3d3d3; 
+			.accordion-toggle {			
+				cursor: pointer;
+				border-top: 1px solid #d3d3d3;
+				&:hover {
+					background-color: #70cce3;
+					color: #fff;
+					text-decoration: none;
+				}
+				.job-title {
+					width: 50%;
+					display: inline-block;
+					padding: 5px;
+					color: #666667;
+				}
+				.job-location {
+					width: 28%;
+				}
+				.job-post-date {
+					width: 20%;
+				}
+				.job-location, .job-post-date {
+					display: inline-block;
+					padding: 5px;
+					text-align: center;
+					color: #666667;
+				}		
+			}
+			.accordion-content {
+				display: none;
+				padding: 5px;
+				border-bottom: 1px solid #d3d3d3; 
+				position: relative;
+				h2 {
+					font-family: 'Montserrat';
+				}
+				.apply-for-job {
+					display: block;
+					margin: 0 auto;
+				}	
+				hr {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}			
+				.btn-success {
+					background-color: #70CCE3 !important;
+					width: 247px;
+					float: right;
+					border-color: #2d6ca2 !important;
+					padding: 10px 16px;
+					&:hover {
+						font-weight: bold;
+					}
+					&:focus, &:active, &:visited {
+						border-color: #2d6ca2 !important;
+					}
+				}
+				> #top-apply.btn.btn-success.btn-lg.btn-block {
+					width: 247px !important;
+					float: right;
+				}
+			}
+			.accordion-content.default {
+				display: block;
+			}
+		}
+	}
+}
+
+/* Events page */
+#outer-events-container {
+	padding: 0 20px;
+    overflow: visible;
+    .event-container, .single-event-container {
+		margin-top: 20px;
+		display: block; 
+		width: 100% !important;
+		height: auto;
+		overflow: hidden;
+		&:first-of-type {
+			margin-top: 0;
+		}
+/*
+		&.hide-event{
+			display: none;
+		}
+*/
+		.date-container {
+			width: 10% !important;
+			text-align: center;
+			font-weight: bold;
+			display: inline-block;
+			float: left;
+			.event-month {
+				font-size: 20px !important;
+				line-height: 21px !important;
+			}
+			.event-day {
+				font-size: 40px !important;
+				line-height: 45px !important;
+			}
+		}
+		.event-title {
+			width: 71% !important;
+			display: inline-block;
+			font-size: 28px !important;
+			line-height: 32px !important;
+			font-weight: bold;
+			float: left;
+			padding-right: 20px;
+			padding-left: 5px;
+			height: 110px !important;
+			min-height: 110px !important;
+		}
+		.social-icons {
+			float: right;
+			display: inline-block;
+			width: 19% !important;
+			p {
+				text-align: center;
+			}
+			.fb-share-button {
+				margin-bottom: 5px;
+			}
+			.email {
+				height: 25px;
+				display: block !important;
+				margin: 0 auto;
+			}
+		}
+		.event-excerpt {
+			width: 85%;
+			float: none;
+			margin: 0 auto;
+			padding-right: 20px;
+		}
+		.event-content {
+			display: none;
+		}
+		.btn.btn-primary {
+			margin-left: 15%;
+			background-color: #70cce3;
+			border-color: #70cce3;
+		}
+	}
+	.single-event-container {
+	    display: none; 
+	    margin-top: 0;
+	    width: 100%;
+	    transition: all 0.5 ease-in;
+	    .event-title {
+		    height: auto !important;
+		    min-height: auto !important;
+	    }
+	    > .social-icons {
+		    float: none;
+		    width: 300px;
+		    display: block;
+		    margin: 5px auto;
+		    text-align: center;
+		    > .fl-icon {
+			    display: block;
+			    vertical-align: bottom;
+			    height: 22px;
+			    margin: 10px auto;
+		    }
+		}
+	    .viewAll {
+		    font-family: 'Montserrat Light', arial;
+		    text-align: center;
+		    cursor: pointer;
+	    }
+    }
+}	
